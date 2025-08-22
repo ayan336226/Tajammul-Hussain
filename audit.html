@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Audit Request</title>
+  <style>
+    /* Basic reset */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Back button styling */
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: transparent;
+      border: 2px solid #65aaff;
+      color: #65aaff;
+      padding: 8px 16px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      user-select: none;
+    }
+    .back-btn:hover {
+      background-color: #65aaff;
+      color: #0f172a;
+    }
+
+    .form-container {
+      background-color: #1f2a47;
+      padding: 40px 30px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #65aaff;
+      font-weight: 700;
+      font-size: 28px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #a0c0ff;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: #2c3e66;
+      color: #e0eaff;
+      resize: vertical;
+      transition: background-color 0.3s ease;
+    }
+    input:focus, select:focus, textarea:focus {
+      background-color: #3e5298;
+      outline: none;
+    }
+    button {
+      width: 100%;
+      background-color: #4f87ff;
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #3571d6;
+    }
+    .note {
+      font-size: 14px;
+      color: #8aadff;
+      text-align: center;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-btn" aria-label="Go back to homepage">&larr; Back</a>
+
+  <div class="form-container">
+    <h1>Request Your Free Audit</h1>
+    <form id="auditForm" action="#" method="POST">
+      <label for="fullName">Full Name <sup>*</sup></label>
+      <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name" />
+
+      <label for="email">Email Address <sup>*</sup></label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email" />
+
+      <label for="storePlatform">E-commerce Platform</label>
+      <select id="storePlatform" name="storePlatform">
+        <option value="">-- Select Platform --</option>
+        <option value="amazon">Amazon</option>
+        <option value="shopify">Shopify</option>
+        <option value="ebay">eBay</option>
+        <option value="walmart">Walmart</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="storeURL">Store URL</label>
+      <input type="url" id="storeURL" name="storeURL" placeholder="Enter your store URL (optional)" />
+
+      <label for="comments">Additional Information</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Tell us more about your store or audit needs"></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+    <p class="note">We respect your privacy. Your info will not be shared.</p>
+  </div>
+
+  <script>
+    // Basic form submit handler (for demo)
+    document.getElementById('auditForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank you! Your free audit request has been received. We will contact you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
