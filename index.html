@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing / Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- NAVBAR / HEADER -->
+  <header class="site-header">
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar-left">
+    <div class="logo">TJ</div>
+    <button id="timeBtn" class="time-btn">Check Availability</button>
+  </div>
+</nav>
+
+<!-- Modal for Time Duration -->
+<div id="timeModal" class="modal">
+ <div class="modal-content">
+  <div class="modal-header">
+    <h2>My Availability</h2>
+    <span class="close-btn" id="closeModal">&times;</span>
+  </div>
+  <p><strong>Monday - Friday:</strong> 9:00 AM to 6:00 PM (Busy)</p>
+  <p><strong>Saturday:</strong> 10:00 AM to 4:00 PM (Available)</p>
+  <p><strong>Sunday:</strong> Off / Not Available</p>
+</div>
+
+</div>
+
+      <nav class="main-nav">
+     <!-- Floating Menu Button -->
+<div id="menuButton" class="menu-btn">
+    ☰
+</div>
+
+<!-- Side Menu -->
+<div id="sideMenu" class="side-menu">
+    <button id="closeMenu" class="close-btn">×</button>
+    <a href="about.html">About</a>
+     <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+   <a href="#" id="privacyLink">Privacy Policy</a>
+
+</div>
+
+      </nav>
+    </div>
+  </header>
+
+<!-- HERO SECTION -->
+<section class="hero" style="min-height: 60vh; background: linear-gradient(135deg, #8eb2f0, #d2e2f7);">
+  <div class="hero-container">
+
+    <!-- Social Icons Left Side -->
+    <div class="social-icons-vertical">
+      <a href="#"><i style="color: blue;" class="fab fa-facebook-f"></i></a>
+      <a href="#"><i style="color: rgb(219, 46, 83);" class="fab fa-instagram"></i></a>
+     <a href="#"><i style="color: darkblue;" class="fab fa-linkedin-in"></i></a> 
+     <a href="https://www.upwork.com" target="_blank" aria-label="Upwork">
+  <i class="fab fa-upwork" style="color:#14a800; font-size:24px;"></i></a>
+    </div>
+
+    <!-- Content Left Side -->
+    <div class="hero-left">
+      <h1>Let's Grow Your <span style="color: rgb(4, 4, 110);">Business Together. </span></h1>
+      <p>Professional Graphic & E-commerce Product Designer</p>
+
+      <div class="platform-icons">
+        <a href="https://www.amazon.com" target="_blank">
+          <img style="background-color: white;" src="OIP__4_-removebg-preview.png" alt="Amazon">
+        </a>
+        <a href="https://www.shopify.com" target="_blank">
+          <img style="background-color: white;" src="OIP__6_-removebg-preview.png" alt="Shopify">
+        </a>
+        <a href="https://www.ebay.com" target="_blank">
+          <img style="background-color: white;" src="c556fddc94f480d2ce7a909956f0a2f1-removebg-preview.png" alt="eBay">
+        </a>
+        <a href="">
+          <img style="background-color: white;" src="OIP__7_-removebg-preview.png" alt="Walmart">
+        </a>
+      </div>
+
+      <div class="hero-stats" style="padding-top: 30px; padding-bottom: 150px;">
+        <div class="stat">
+          <strong>1000+</strong>
+          <span>Projects</span>
+        </div>
+        <div class="stat">
+          <strong>700+</strong>
+          <span>Happy Clients</span>
+        </div>
+        <div class="stat">
+          <strong>50+</strong>
+          <span>Team</span>
+        </div>
+        <div class="stat">
+          <strong>200+</strong>
+          <span>Best Achievements</span>
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="audit.html"><button class="btn primary">Get a free audit</button></a>
+        <a href="#contact"><button class="btn outline">Contact</button></a>
+      </div>
+    </div>
+
+    <!-- Center Image -->
+    <div class="hero-center">
+      <img src="2e70a5ed-d6d0-4ac2-a26f-1dfb082df630.jfif" alt="Profile Image" class="hero-img" />
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- STATISTICS SECTION -->
+  <section id="statistics" class="statistics container" style=" background: linear-gradient(135deg, #0f172a, #1e293b);">
+    <h2 class="section-title">Statistics</h2>
+    <div class="stats-grid">
+      <div class="circle-stat">
+        <div class="num" style="color: rgb(77, 121, 121);">1000+</div>
+        <div class="label">Total Designs</div>
+      </div>
+      <div class="circle-stat">
+        <div class="num" style="color: rgb(77, 121, 121);">750+</div>
+        <div class="label">Product Photos</div>
+      </div>
+      <div class="circle-stat">
+        <div class="num" style="color: rgb(77, 121, 121);">1000+</div>
+        <div class="label">Hours Worked</div>
+      </div>
+      <div class="circle-stat">
+        <div class="num" style="color: rgb(77, 121, 121);">1000+</div>
+        <div class="label">Satisfied Buyers</div>
+      </div>
+    </div>
+  </section>
+  <!-- statistics 2 -->
+<section class="stats-section">
+  <div class="container">
+    <h2 class="stats-title">E-Commerce Performance Statistics</h2>
+    <p class="stats-intro">
+      Our e-commerce platform continues to achieve exceptional growth by delivering
+      quality products, outstanding customer service, and innovative marketing strategies.
+      Below are key performance statistics that reflect our progress and market impact.
+    </p>
+
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>1.2M+</h3>
+        <p>Monthly Visitors</p>
+        <span>
+          In the past year, our monthly visitor count has crossed the 1.2 million mark, 
+          indicating consistent demand and strong digital presence in competitive markets.
+        </span>
+      </div>
+
+      <div class="stat-item">
+        <h3>85%</h3>
+        <p>Customer Retention Rate</p>
+        <span>
+          High retention rates reflect the trust and satisfaction of our customers, 
+          supported by loyalty programs, fast shipping, and premium product quality.
+        </span>
+      </div>
+
+      <div class="stat-item">
+        <h3>$4.8M</h3>
+        <p>Annual Revenue</p>
+        <span>
+          Our total annual revenue has grown by over 35% year-on-year, 
+          driven by strategic sales campaigns and expanding into new regions.
+        </span>
+      </div>
+
+      <div class="stat-item">
+        <h3>4.9★</h3>
+        <p>Average Customer Rating</p>
+        <span>
+          Feedback from thousands of verified customers has resulted in 
+          a near-perfect average rating across all major e-commerce platforms.
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- MY WORK / GALLERY -->
+<section class="work-section" id="work">
+  <div class="container">
+    <h2 class="section-title">Our Work</h2>
+    <div class="work-items">
+
+      <div class="work-item">
+        <h3>Custom Web Development</h3>
+        <p>
+          We specialize in creating tailored websites that meet the unique needs of each business. 
+          From responsive design to secure payment integration, every project is developed with a 
+          focus on user experience, speed, and scalability. Our team ensures that your site not only 
+          looks great but also performs flawlessly across all devices.
+        </p>
+      </div>
+
+      <div class="work-item">
+        <h3>E-Commerce Solutions</h3>
+        <p>
+          Our e-commerce solutions are built to drive sales and improve customer retention. 
+          We integrate powerful analytics, inventory management, and optimized checkout systems 
+          to create an online store that’s fast, secure, and easy to manage. Whether you’re 
+          launching a new store or upgrading an existing one, we deliver results that help 
+          your business grow.
+        </p>
+      </div>
+
+      <div class="work-item">
+        <h3>Brand Identity & Design</h3>
+        <p>
+          Your brand is your story, and we help you tell it through thoughtful design and 
+          creative visuals. From logo design to full-scale brand guidelines, we ensure that 
+          your identity is consistent, memorable, and aligned with your values. We work 
+          closely with you to bring your vision to life in a way that resonates with your audience.
+        </p>
+      </div>
+
+      <div class="work-item">
+        <h3>Digital Marketing Campaigns</h3>
+        <p>
+          We plan and execute data-driven marketing campaigns that engage your audience and 
+          generate measurable results. Using SEO, social media marketing, and targeted 
+          advertising, we help you reach the right people at the right time. Our approach 
+          combines creativity with analytics to maximize your return on investment.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- case studies -->
+ <section class="case-studies">
+  <h2 class="section-title">Case Studies</h2>
+  <p class="section-subtitle">
+    Real success stories from our clients — how we helped them achieve remarkable results in e-commerce growth.
+  </p>
+
+  <div class="case-study-container">
+
+    <div class="case-study-card">
+      <h3>Boosting Online Store Sales</h3>
+      <p class="case-description">
+        An emerging fashion brand struggled with low conversion rates and poor checkout experience. We revamped their store design, optimized their product pages, and introduced one-click checkout.
+      </p>
+      <ul class="case-results">
+        <li><strong>+140%</strong> Sales Growth</li>
+        <li><strong>-35%</strong> Cart Abandonment</li>
+      </ul>
+    </div>
+
+    <div class="case-study-card">
+      <h3>Scaling Global Reach</h3>
+      <p class="case-description">
+        A home-decor store wanted to expand internationally. Our team implemented multi-currency support, improved page speed, and launched targeted ad campaigns in 3 new countries.
+      </p>
+      <ul class="case-results">
+        <li><strong>+3</strong> New Markets</li>
+        <li><strong>+85%</strong> International Orders</li>
+      </ul>
+    </div>
+
+    <div class="case-study-card">
+      <h3>Product Launch Success</h3>
+      <p class="case-description">
+        A startup planned to launch a unique gadget but lacked audience engagement. We created a pre-launch email funnel, social media teasers, and influencer collaborations.
+      </p>
+      <ul class="case-results">
+        <li><strong>5,000+</strong> Pre-Orders</li>
+        <li><strong>+210%</strong> Website Traffic</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+ 
+<!-- SERVICES -->
+<section class="services-section" id="services">
+  <div class="container">
+    <h2 class="section-title">My Freelance Services</h2>
+    <p class="section-intro">
+      As a dedicated e-commerce freelancer, I offer tailored solutions to help your online store thrive across major platforms.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="amazon-removebg-preview.png" alt="Amazon" class="service-icon-img">
+        <h3>Amazon Product Listing & Optimization</h3>
+        <p>
+          I help create and optimize your Amazon product listings with compelling titles, descriptions, and SEO strategies to increase visibility and sales.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <img src="shopify-removebg-preview.png" alt="Shopify" class="service-icon-img">
+        <h3>Shopify Store Setup & Customization</h3>
+        <p>
+          Setting up your Shopify store with attractive themes, smooth navigation, and integrated apps to boost user experience and conversions.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <img src="OIP__7_-removebg-preview.png" alt="Walmart" class="service-icon-img">
+        <h3>Walmart Marketplace Assistance</h3>
+        <p>
+          Support with product uploads, inventory management, and promotional campaigns tailored to Walmart's platform policies and audience.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <img src="c556fddc94f480d2ce7a909956f0a2f1-removebg-preview.png" alt="eBay" class="service-icon-img">
+        <h3>eBay Store Management & Marketing</h3>
+        <p>
+          Enhance your eBay store with optimized listings, effective pricing strategies, and targeted marketing to grow your customer base.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ON BOARDING -->
+<section id="onboarding" class="onboarding-section">
+  <div class="container">
+    <h2 class="section-title">How I Work With Clients</h2>
+    <p class="section-intro">
+      I believe in clear communication and a smooth collaboration process. Here’s how I onboard new clients to ensure success:
+    </p>
+
+    <div class="onboarding-steps">
+      <div class="step">
+        <h3>Step 1: Initial Consultation</h3>
+        <p>
+          We discuss your project goals, requirements, and expectations to ensure we’re aligned from the start.
+        </p>
+      </div>
+      <div class="step">
+        <h3>Step 2: Proposal & Agreement</h3>
+        <p>
+          I provide a detailed proposal including scope, timeline, and pricing. Once approved, we sign an agreement.
+        </p>
+      </div>
+      <div class="step">
+        <h3>Step 3: Project Kickoff</h3>
+        <p>
+          I begin work with regular updates and open communication to keep you involved throughout the process.
+        </p>
+      </div>
+      <div class="step">
+        <h3>Step 4: Delivery & Feedback</h3>
+        <p>
+          Final deliverables are shared for your review, and I’m happy to make revisions to ensure your satisfaction.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- TRUST BADGES -->
+<section id="trust-badges" class="trust-badges-section">
+  <div class="container">
+    <h2 class="section-title">Why Hire Me?</h2>
+    <p class="section-intro">
+      Working with me means getting professionalism, reliability, and quality. Here’s why clients trust my services:
+    </p>
+    <div class="badges-wrapper">
+      <div class="badge">
+        <i class="fas fa-user-check"></i>
+        <h3>Verified Freelancer</h3>
+        <p>My identity and skills have been verified to ensure authenticity.</p>
+      </div>
+      <div class="badge">
+        <i class="fas fa-clock"></i>
+        <h3>On-time Delivery</h3>
+        <p>I respect deadlines and always deliver work on time.</p>
+      </div>
+      <div class="badge">
+        <i class="fas fa-thumbs-up"></i>
+        <h3>100% Client Satisfaction</h3>
+        <p>Clients consistently rate me highly for quality and professionalism.</p>
+      </div>
+      <div class="badge">
+        <i class="fas fa-lock"></i>
+        <h3>Secure & Milestone Payments</h3>
+        <p>Payment methods ensure security and transparency for all projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Privacy Modal -->
+<div id="privacyModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="privacyCloseBtn">&times;</span>
+    <h2>Privacy Policy</h2>
+    <p>We value your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and safeguard your data when you use our website.</p>
+
+    <h3>Information We Collect</h3>
+    <p>We may collect personal details like your name, email address, and browsing data to enhance your experience.</p>
+
+    <h3>How We Use Your Information</h3>
+    <p>Your information helps us communicate with you, improve our services, and personalize content.</p>
+
+    <h3>Sharing Your Information</h3>
+    <p>We do not sell or rent your personal data. We may share information with trusted service providers only to help operate our website.</p>
+
+    <h3>Cookies & Tracking</h3>
+    <p>Our website uses cookies to improve functionality and analyze traffic. You can manage your cookie preferences in your browser settings.</p>
+
+    <h3>Your Rights</h3>
+    <p>You can request access to your data, ask for corrections, or request deletion by contacting us.</p>
+
+    <h3>Data Security</h3>
+    <p>We implement security measures to protect your data from unauthorized access or disclosure.</p>
+
+    <h3>Contact Us</h3>
+    <p>If you have questions about this privacy policy, please <a href="mailto:tajammulhussain@gmail.com">contact us</a>.</p>
+  </div>
+</div>
+
+  <!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2 class="footer-logo">TJ</h2>
+      <p>Your trusted partner in e-commerce solutions and product design. Helping you grow your business with creative and professional services.</p>
+    </div>
+    <div class="footer-links">
+      
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: .........@gmail.com</p>
+      <p>Phone: +92.........</p>
+      <p>Address: ................PAKISTAN</p>
+    </div>
+<div class="footer-social">
+  <h3>Follow Us</h3>
+  <div class="social-icons">
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-link">
+      <!-- Instagram SVG -->
+      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5a3.75 3.75 0 0 0 3.75-3.75v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5zm7.5 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-4.25 1.5a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5zm0 2a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 0 0 0-5.5z"/>
+      </svg>
+    </a>
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-link">
+      <!-- Facebook SVG -->
+      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.3 3h-1.9v7A10 10 0 0 0 22 12z"/>
+      </svg>
+    </a>
+    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-link">
+      <!-- LinkedIn SVG -->
+      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M4.98 3.5C3.34 3.5 2 4.85 2 6.5c0 1.64 1.34 3 2.98 3a2.995 2.995 0 0 0 0-6zm.02 4.75H2v14h3V8.25zm7.25 0h-2.9v14h3v-7.5c0-2.75 3.5-2.97 3.5 0v7.5h3v-8.75c0-5.25-5.5-5.05-6.6-2.48V8.25z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+  <div class="footer-bottom">
+    <p>© 2025 <a href="index.html" style="text-decoration: none; color: #060607">TJ </a>. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Main JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  // Select all video sliders on the page
+  document.querySelectorAll(".video-slider").forEach(function (slider) {
+    const videos = slider.querySelectorAll("video");
+    const dotsContainer = slider.querySelector(".slider-dots");
+
+    // Create dots dynamically
+    videos.forEach((_, index) => {
+      const dot = document.createElement("span");
+      dot.classList.add("dot");
+      if (index === 0) dot.classList.add("active");
+      dot.addEventListener("click", () => showVideo(index));
+      dotsContainer.appendChild(dot);
+    });
+
+    let currentIndex = 0;
+    const dots = dotsContainer.querySelectorAll(".dot");
+
+    function showVideo(index) {
+      videos.forEach((video, i) => {
+        video.style.display = i === index ? "block" : "none";
+        if (i === index) {
+          video.currentTime = 0;
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+      });
+
+      currentIndex = index;
+    }
+
+    // Auto-play next video when one ends
+    videos.forEach((video, index) => {
+      video.addEventListener("ended", () => {
+        let nextIndex = (index + 1) % videos.length;
+        showVideo(nextIndex);
+      });
+    });
+
+    // Initialize first video
+    showVideo(currentIndex);
+  });
+});
+const menuBtn = document.getElementById("menuButton");
+const sideMenu = document.getElementById("sideMenu");
+const closeMenu = document.getElementById("closeMenu");
+const menuLinks = document.querySelectorAll("#sideMenu a");
+
+// Open menu
+menuBtn.addEventListener("click", () => {
+    sideMenu.classList.add("open");
+});
+
+// Close menu when clicking close button
+closeMenu.addEventListener("click", () => {
+    sideMenu.classList.remove("open");
+});
+
+// Close menu when clicking any link
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        sideMenu.classList.remove("open");
+    });
+});
+const modal = document.getElementById('timeModal');
+const btn = document.getElementById('timeBtn');
+const closeBtn = document.getElementById('closeModal');
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</Script>
+<script>
+  const privacyModal = document.getElementById('privacyModal');
+const privacyOpenBtn = document.getElementById('privacyLink');
+const privacyCloseBtn = document.getElementById('privacyCloseBtn');
+
+privacyOpenBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  privacyModal.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+});
+
+privacyCloseBtn.addEventListener('click', function() {
+  privacyModal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+});
+
+window.addEventListener('click', function(e) {
+  if (e.target === privacyModal) {
+    privacyModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+});
+
+  </script>
+</body>
+</html>
