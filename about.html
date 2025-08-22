@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/* About Section */
+.about-section {
+  border-bottom: 2px solid #1e293b;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e0e6f8;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: transparent;
+  border: none;
+  font-size: 36px;
+  color: #c0c7e3;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+}
+
+.close-btn a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #374151;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #dbeafe;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 18px;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(255 255 255 / 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(255 255 255 / 0.3);
+}
+
+/* About Content Section */
+.about-content {
+  padding: 40px 20px;
+  background: #1e293b;
+  color: #e0e6f8;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.about-content h2 {
+  font-size: 44px;
+  margin-bottom: 25px;
+  color: #93c5fd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-content h2 i {
+  color: #60a5fa;
+  font-size: 36px;
+}
+
+.about-content h3 {
+  font-size: 32px;
+  color: #60a5fa;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-content h3 i {
+  font-size: 28px;
+}
+
+.about-content p, 
+.about-content ul {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #dbeafe;
+  margin-bottom: 30px;
+}
+
+.about-content ul {
+  list-style: disc inside;
+  color: #cbd5e1;
+  max-width: 720px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  .profile-name {
+    font-size: 30px;
+  }
+  .about-content h2 {
+    font-size: 36px;
+  }
+  .about-content h3 {
+    font-size: 26px;
+  }
+  .about-content p, .about-content ul {
+    font-size: 16px;
+  }
+}
+
+
+</style>
+<body>
+<section id="about-section" class="about-section">
+  <button class="close-btn">
+    <a href="index.html" aria-label="Close About Section">&times;</a>
+  </button>
+
+  <div class="about-header">
+    <img src="2e70a5ed-d6d0-4ac2-a26f-1dfb082df630.jfif" alt="Profile Image" class="profile-img">
+
+    <div class="profile-info">
+      <h2 class="profile-name">Tajammul Hussain</h2>
+
+      <div class="social-icons">
+        <a href="https://fiverr.com" target="_blank" rel="noopener" aria-label="Fiverr">
+          <img src="fiver.jfif" alt="Fiverr" class="social-icon">
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://upwork.com" target="_blank" rel="noopener" aria-label="Upwork">
+          <img src="upwork2.jfif" alt="Upwork" class="social-icon">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about-content">
+  <h2><i class="fas fa-user-tie"></i> About Me</h2>
+  
+  <p>
+    I am a <strong>professional e-commerce freelancer</strong> with <strong>5+ years of experience</strong> managing online stores on global marketplaces like 
+    <strong>Amazon, eBay, Etsy</strong>, and <strong>Walmart</strong>. I have successfully helped 
+    <strong>50+ international clients</strong> grow their businesses, generating over 
+    <strong>$1.2M in combined sales revenue</strong> through strategic store management and marketing.
+  </p>
+
+  <h3><i class="fas fa-chart-line"></i> Proven Results</h3>
+  <ul>
+    <li>Listed & optimized <strong>2,500+ products</strong> with an average <strong>35% increase in visibility</strong>.</li>
+    <li>Achieved <strong>200% monthly sales growth</strong> for eBay clients through targeted campaigns.</li>
+    <li>Managed Amazon PPC campaigns with an <strong>ACOS as low as 18%</strong>.</li>
+    <li>Maintained an <strong>average seller rating of 4.9/5</strong>.</li>
+  </ul>
+
+  <h3><i class="fas fa-tools"></i> Skills & Expertise</h3>
+  <ul>
+    <li>Amazon FBA & FBM management</li>
+    <li>Product listing, SEO optimization & pricing strategy</li>
+    <li>Inventory forecasting & order fulfillment</li>
+    <li>Image optimization & compliance</li>
+    <li>Market research & competitor analysis</li>
+    <li>Proficient in <strong>Helium 10, Jungle Scout, Zik Analytics, Canva</strong></li>
+  </ul>
+
+  <h3><i class="fas fa-bullseye"></i> My Mission</h3>
+  <p>
+    My mission is simple: <strong>to help sellers achieve measurable growth</strong>. Whether you’re launching your first product or scaling an established store, 
+    I provide the skills, insights, and dedication to turn your e-commerce goals into reality — with proven results to back it up.
+  </p>
+</section>
+
+<!-- Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+</html>
